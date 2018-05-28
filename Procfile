@@ -1,1 +1,1 @@
-web: gunicorn sltest.wsgi
+web: gunicorn mysite.wsgi
