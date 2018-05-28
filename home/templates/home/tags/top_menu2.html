@@ -1,0 +1,46 @@
+{% load menu_tags static wagtailcore_tags %}
+{% get_site_root as site_root %}
+
+<header id="pageTop" class="header">
+
+  <!-- TOP INFO BAR -->
+
+  <div class="nav-wrapper navbarWhite">
+    <!-- NAVBAR -->
+    <nav id="menuBar" class="navbar navbar-default lightHeader animated " role="navigation">
+      <div class="container">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://127.0.0.1:8000/welcome-simple-luxuries/">
+            <img src="/static/img/logo140.png" alt="Image" width="140" height="44">
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              
+              {% for menuitem in menuitems %}
+                <li class="{% if menuitem.active %}active {% endif %}{% if menuitem.show_dropdown %}dropdown{% endif %} singleDrop">
+                    {% if menuitem.show_dropdown %}
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ menuitem.title }} <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    {% top_menu_children2 parent=menuitem %}
+                    {% else %}
+                        <a href="{% pageurl menuitem %}">{{ menuitem.title }}</a>
+                    {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+        </div>
+        <a class="btn btn-default navbar-btn" href="http://127.0.0.1:8000/welcome-simple-luxuries/"> + <span>Login</span></a>
+      </div>
+    </nav>
+  </div>
+</header>

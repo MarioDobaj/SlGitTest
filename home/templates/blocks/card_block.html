@@ -1,0 +1,51 @@
+{% load static wagtailcore_tags wagtailimages_tags %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-xs-12">
+
+            <div class="row">
+                
+                <div class="col-sm-4 col-xs-12">
+                    <div class="thingsBox thinsSpace">
+                        <div class="thingsImage">
+                            <img src="{% static 'img/things/things-2.jpg' %}" alt="Image things">
+                            <div class="thingsMask">
+                                
+                                <a href="blog-details.html"><h2>The City Theater</h2></a>
+                                <p>10 Bay Street Toronto Ontario Canada</p>
+                            </div>
+                        </div>
+                        <div class="thingsCaption ">
+                            <ul class="list-inline captionItem">
+                                <li><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</li>
+                                <li><a href="category-list-left.html">Others</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-xs-12">
+                        <div class="thingsBox thinsSpace">
+                            <div class="thingsImage">
+                                
+                                {% image value.image width-370 %}
+                                <div class="thingsMask">
+                                    
+                                    <a href="blog-details.html"><h2>{% include_block value.title %}</h2></a>
+                                    <p>{% include_block value.description %}</p>
+                                </div>
+                            </div>
+                            <div class="thingsCaption ">
+                                <ul class="list-inline captionItem">
+                                    <li><i class="fa fa-heart-o" aria-hidden="true"></i> {% include_block value.likes %}</li>
+                                    <li><a href="category-list-left.html">{% include_block value.authorName %}</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>

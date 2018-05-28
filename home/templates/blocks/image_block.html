@@ -1,0 +1,15 @@
+{% load static wagtailcore_tags wagtailimages_tags %}
+
+
+<div class="rich-text">
+    <p></p>
+    {% if value.image.width > 800 %}
+    <img class="richtext-image full-width" src="/media/{{ value.image.file }}" width="90%">
+    {% elif value.image.width > 500 %}
+    <img class="richtext-image full-width" src="/media/{{ value.image.file }}" width="70%">
+    {% else %}
+    <img class="richtext-image full-width" src="/media/{{ value.image.file }}" width="50%">
+    {% endif %}
+    <p><br></p>
+</div>
+

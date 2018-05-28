@@ -1,0 +1,36 @@
+{% load static wagtailcore_tags wagtailimages_tags %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-xs-12">
+
+            <div class="row">
+                
+                {% for card in value.cards %}
+
+                <div class="col-sm-4 col-xs-12">
+                    <div class="thingsBox thinsSpace">
+                        <div class="thingsImage">
+                            
+                            {% image card.image width-370 %}
+                            <div class="thingsMask">
+                                
+                                <a href="{% include_block card.link %}"><h2>{% include_block card.title %}</h2></a>
+                                <p>{% include_block card.description %} - {% include_block card.price %}</p>
+                            </div>
+                        </div>
+                        <div class="thingsCaption ">
+                            <ul class="list-inline captionItem">
+                                <li> </li>
+                                <li><a href="#">{% include_block card.authorName %}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</div>

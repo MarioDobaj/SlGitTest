@@ -1,0 +1,20 @@
+{% extends "base_hero.html" %}
+
+{% load static wagtailcore_tags %}
+
+{% block body_class %}template-homepage{% endblock %}
+{% include_block page.body %}
+
+
+
+{% block content %}
+<section class="clearfix thingsArea">
+        <div class="container">
+            <div class="page-header text-center">
+                {{ page.body|richtext }}
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+

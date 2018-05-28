@@ -1,0 +1,9 @@
+{% load static wagtailcore_tags wagtailimages_tags %}
+
+<div class="rich-text">
+    <p></p><p></p><p></p>
+    <div class="responsive-object">
+        <iframe style="min-width: 350px; width: 50%; height: 270px;" src="https://www.youtube.com/embed/{{ value.url|cut:'https://www.youtube.com/watch?v=' }}?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+    </div>
+    <p></p>
+</div>

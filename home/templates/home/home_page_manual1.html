@@ -1,0 +1,218 @@
+{% extends "base_hero_manual.html" %}
+
+{% load static wagtailcore_tags %}
+
+{% block body_class %}template-homepage{% endblock %}
+{% include_block page.body %}
+
+
+
+{% block content %}
+<section class="clearfix thingsArea">
+        <div class="container">
+            <div class="page-header text-center">
+                {{ page.body|richtext }}
+            </div>
+        </div>
+    </section>
+
+
+
+
+<!-- Gallery Section -->
+<section class="populer-city-section bg-dark">
+        <div class="container">
+            <div class="page-header text-center">
+                <h2>Popular Cities <small>Browse listings in popular places </small></h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <a href="http://127.0.0.1:8000/experiences/" class="img-box">
+                        <img src="/media/original_images/Lju.jpg" alt="Image">
+                        <div class="content">
+                            <h3></h3>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-8 col-xs-12">
+                    <a href="http://127.0.0.1:8000/experiences/" class="img-box">
+                        <img src="/media/original_images/Maribor_IHGoZ5k.jpg" alt="Image">
+                        <div class="content">
+                            <h3></h3>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-8">
+                    <a href="http://127.0.0.1:8000/experiences/" class="img-box">
+                        <img src="/media/original_images/koper_Bz2rAoY.jpg" alt="Image">
+                        <div class="content">
+                            <h3> </h3>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a href="http://127.0.0.1:8000/experiences/" class="img-box">
+                        <img src="/media/original_images/Piran_eJaIX7z.jpg" alt="Image">
+                        <div class="content">
+                            <h3></h3>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- gallery details row -->
+        </div>
+    </section>
+
+
+
+<!-- INTEREST SECTION -->
+<section class="clearfix interestArea">
+        <div class="container">
+            <div class="page-header text-center">
+                <h2>What are You Interested in? <small>Explore and connect with awesome locals</small></h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 col-xs-12">
+                    <a href="http://127.0.0.1:8000/experiences/" class="interestContent">
+                        <span>
+                            <i class="icon-listy icon-tea-cup-1"></i>
+                            Local Food
+                        </span>
+                    </a>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <a href="http://127.0.0.1:8000/experiences/" class="interestContent">
+                        <span>
+                            <i class="icon-listy icon-building"></i>
+                            Unique Accomodation
+                        </span>
+                    </a>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <a href="http://127.0.0.1:8000/experiences/" class="interestContent">
+                        <span>
+                            <i class="icon-listy icon-martini"></i>
+                            Local Brew
+                        </span>
+                    </a>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <a href="http://127.0.0.1:8000/experiences/" class="interestContent">
+                        <span>
+                            <i class="icon-listy icon-car-1"></i>
+                            Road Trip
+                        </span>
+                    </a>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <a href="http://127.0.0.1:8000/experiences/" class="interestContent">
+                        <span>
+                            <i class="icon-listy icon-castle"></i>
+                            Cultural Heritage
+                        </span>
+                    </a>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <a href="http://127.0.0.1:8000/experiences/" class="interestContent">
+                        <span>
+                            <i class="icon-listy icon-television"></i>
+                            Popular Places
+                        </span>
+                    </a>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <a href="http://127.0.0.1:8000/experiences/" class="interestContent">
+                        <span>
+                            <i class="icon-listy icon-mall-1"></i>
+                            Urban Exploration
+                        </span>
+                    </a>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <a href="http://127.0.0.1:8000/experiences/" class="interestContent">
+                        <span>
+                            <i class="icon-listy icon-more"></i>
+                            View All
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- INTEREST SECTION -->
+<section class="populer-city-section bg-dark" >
+        <div class="container">
+                <div class="page-header text-center">
+                        <h2>Instagram <small>@onsloea </small></h2>
+                    </div>
+            <div class="row">
+                <div class="col-sm-3 col-xs-12">
+                    <a href="http://127.0.0.1:8000/experiences/" class="interestContent" style="background-image: url(/media/original_images/1.jpg); width: 250px; height: 250px;">
+                        <span>
+                            
+                        </span>
+                    </a>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <a href="http://127.0.0.1:8000/experiences/" class="interestContent" style="background-image: url(/media/original_images/2.jpg); width: 250px; height: 250px;">
+                        <span>
+                            
+                        </span>
+                    </a>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <a href="http://127.0.0.1:8000/experiences/" class="interestContent" style="background-image: url(/media/original_images/3.jpg); width: 250px; height: 250px;">
+                        <span>
+                            
+                        </span>
+                    </a>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <a href="http://127.0.0.1:8000/experiences/" class="interestContent" style="background-image: url(/media/original_images/9.jpg); width: 250px; height: 250px;">
+                        <span>
+                            
+                        </span>
+                    </a>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <a href="http://127.0.0.1:8000/experiences/" class="interestContent" style="background-image: url(/media/original_images/5.jpg); width: 250px; height: 250px;">
+                        <span>
+                            
+                        </span>
+                    </a>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <a href="http://127.0.0.1:8000/experiences/" class="interestContent" style="background-image: url(/media/original_images/6.jpg); width: 250px; height: 250px;">
+                        <span>
+                            
+                        </span>
+                    </a>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <a href="http://127.0.0.1:8000/experiences/" class="interestContent" style="background-image: url(/media/original_images/7.jpg); width: 250px; height: 250px;">
+                        <span>
+                            
+                        </span>
+                    </a>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <a href="http://127.0.0.1:8000/experiences/" class="interestContent" style="background-image: url(/media/original_images/8.jpg); width: 250px; height: 250px;">
+                        <span>
+                            
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+

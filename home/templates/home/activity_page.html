@@ -1,0 +1,113 @@
+{% extends "base_no_hero.html" %}
+
+{% load static wagtailcore_tags %}
+
+{% block body_class %}template-homepage{% endblock %}
+{% include_block page.body %}
+
+{% block content %}
+
+
+
+<!-- LISTINGS DETAILS TITLE SECTION -->
+<section class="clearfix paddingAdjustBottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="listingTitleArea">
+                        <h2>{{ page.activityTitle }}</h2>
+                        <p>{{ page.price }} <br>{{ page.address }}</p>
+                        <div class="listingReview">
+                            <ul class="list-inline rating">
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                            </ul>
+                            <span>( 5 Reviews )</span>
+                            <ul class="list-inline captionItem">
+                                <li><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Write a review</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- LISTINGS DETAILS IMAGE SECTION -->
+    <section class="clearfix paddingAdjustTopBottom">
+        <ul class="list-inline listingImage">
+            <li><img src="/media/{{ self.image1.file }}" alt="Image Listing" class="img-responsive"></li>
+            <li><img src="/media/{{ self.image2.file }}" alt="Image Listing" class="img-responsive"></li>
+            <li><img src="/media/{{ self.image3.file }}" alt="Image Listing" class="img-responsive"></li>
+            <li><img src="/media/{{ self.image4.file }}" alt="Image Listing" class="img-responsive"></li>
+        </ul>
+    </section>
+    
+    <!-- LISTINGS DETAILS INFO SECTION -->
+    <section class="clearfix paddingAdjustTop">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-xs-12">
+                    <div class="listDetailsInfo">
+                        <div class="detailsInfoBox">
+                            <h3>About This Experience</h3>
+                            <p>
+                                {{ page.body|richtext }}
+                            </p>
+                        </div>
+                        <div class="detailsInfoBox">
+                            <h3>Features</h3>
+                            <ul class="list-inline featuresItems">
+                                <li><i class="fa fa-check-circle-o" aria-hidden="true"></i>  Wi-Fi</li>
+                                <li><i class="fa fa-check-circle-o" aria-hidden="true"></i>  Vegetarian</li>
+                                <li><i class="fa fa-check-circle-o" aria-hidden="true"></i>  Reservations</li>
+                                <li><i class="fa fa-check-circle-o" aria-hidden="true"></i>  Pets Friendly</li>
+                                <li><i class="fa fa-check-circle-o" aria-hidden="true"></i>  Accept Credit Card</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="detailsInfoBox">
+                            <h3>Write A Review </h3>
+                            <div class="listingReview">
+                                <span>( 5 Reviews )</span>
+                                <ul class="list-inline rating rating-review">
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                </ul>
+                            </div>
+                            <form action="#">
+                                <div class="formSection formSpace">
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="3" placeholder="Comment"></textarea>
+                                    </div>
+                                    <div class="form-group mb0">
+                                        <button type="submit" class="btn btn-primary">Send Review</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="clearfix map-sidebar map-right">
+                        <div id="map" style="position:relative; margin: 0;padding: 0;height: 538px; max-width: none;"></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+{% endblock %}
+
+
