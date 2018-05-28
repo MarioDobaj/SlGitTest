@@ -109,11 +109,11 @@ DATABASES = {
 
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'simple_luxuries',
-        'USER': 'sl',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '',
+        'NAME': 'dbkfedhattev02',
+        'USER': 'gjntqvjpgemypm',
+        'PASSWORD': '708a3634b57f86f5ad1840dec8a4f6cb853543ab94b9cf8360df7f197fc7fa1e',
+        'HOST': 'ec2-23-23-130-158.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
@@ -178,4 +178,3 @@ WAGTAIL_SITE_NAME = "mysite"
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
 BASE_URL = 'http://example.com'
 
-DISABLE_COLLECTSTATIC=1
