@@ -2,7 +2,7 @@ astroid==1.6.3
 beautifulsoup4==4.6.0
 certifi==2018.1.18
 chardet==3.0.4
-Django==2.0.4
+Django==2.2.13
 django-colorful==1.2
 django-el-pagination==3.2.4
 django-modelcluster==4.1
